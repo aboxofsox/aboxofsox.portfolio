@@ -5,6 +5,10 @@
     font-family: 'Robot', sans-serif;
 }
 
+html, body {
+    overflow: hidden;
+}
+
 body, main {
     background: #0d0d0d;
     color: white;
@@ -12,6 +16,10 @@ body, main {
 
 main {
     font-size: 4rem;
+    display: flex;
+    flex-flow: column;
+    width: 100vw;
+    height: 100vh;
 }
 
 main h1 span {
