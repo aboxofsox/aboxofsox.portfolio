@@ -53,11 +53,20 @@ small {
     font-size: 1.25rem;
     font-style: italic;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: normal;
+    font-size: 1.87rem;
+    letter-spacing: 0.2em;
+}
 .portrait {
     width: 351px;
     height: 351px;
-    border-radius: 0.5em;
+    border-radius: 50%;
     object-fit: cover;
 }
 
