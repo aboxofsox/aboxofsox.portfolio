@@ -23,8 +23,8 @@ header {
 }
 
 .portrait {
-    width: 205px;
-    height: 205px;
+    width: 155px;
+    height: 155px;
     object-fit: cover;
     border-radius: 50%;
     margin: 30px auto;
@@ -154,6 +154,7 @@ footer a {
     right:0;
     color:white;
 }
+
 .slider-container {
     display: none;
 }

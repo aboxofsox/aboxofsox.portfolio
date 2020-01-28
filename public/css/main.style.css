@@ -16,3 +16,4 @@ body {
     min-width: 100vw;
 }
 
+@import './projects.slider.css';

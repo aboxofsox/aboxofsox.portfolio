@@ -7,8 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Bebas+Neue&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/94f76db31f.js"></script>
     <script src="./public/js/client.js"></script>
+    <!-- TODO: Consolidate media queries into main CSS file -->
+    <!-- TODO: Make mobile friendly project container       -->
     <link rel="stylesheet" href="public/css/main.style.css">
+    <link rel="stylesheet" media="(min-device-width: 320px)" href="./public/css/lib/mobile-320.css"/>
     <link rel="stylesheet" media="(min-device-width: 414px)" href="./public/css/lib/mobile-414.css"/>
+    <link rel="stylesheet" media="(min-device-width: 700px)" href="./public/css/lib/portable-700.css"/>
     <link rel="stylesheet" media="(min-device-width: 1080px)" href="./public/css/lib/desktop-1080.css"/>
     <title>aboxofsox</title>
 </head>
@@ -26,7 +30,7 @@
     </div>
     <main>
     <header>
-        <img src="./public/assets/images/placeholder.jpg" alt="image" class="portrait">
+        <img src="./public/assets/images/yoda.jpg" alt="image" class="portrait">
         <h1 class="title">aboxofsox</h1>
         <h5 class="sub-title">web developer</h5>
     </header>
@@ -70,10 +74,43 @@
     <!-- Projects Container -->
     <section id="projects" class="container">
         <h1 class="title-md">projects</h1>
-        <i class="fas fa-play"></i>
+        <!-- <i class="fas fa-play"></i> -->
+        <div class="slider-container">
+            <div class="slider-block">
+                <img src="https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="slider-block-bkg">
+                <div class="slider-block-content">
+                    <h1>Project Name</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus id libero itaque totam recusandae aspernatur!</p>
+                    <button class="btn btn-primary">Demo</button>
+                </div>
+            </div>
+            <div class="slider-block">
+                <img src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="slider-block-bkg">
+                <div class="slider-block-content">
+                    <h1>Project Name</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus id libero itaque totam recusandae aspernatur!</p>
+                    <button class="btn btn-primary">Demo</button>
+                </div>
+            </div>
+            <div class="slider-block">
+                <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="slider-block-bkg">
+                <div class="slider-block-content">
+                    <h1>Project Name</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus id libero itaque totam recusandae aspernatur!</p>
+                    <button class="btn btn-primary">Demo</button>
+                </div>
+            </div>
+            <div class="slider-block">
+                <img src="https://images.pexels.com/photos/207580/pexels-photo-207580.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" class="slider-block-bkg">
+                <div class="slider-block-content">
+                    <h1>Project Name</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus id libero itaque totam recusandae aspernatur!</p>
+                    <button class="btn btn-primary">Demo</button>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Projects Container End -->
-
     <!-- Skills Container Mobile -->
     <section id="skills" class="container skills">
         <h1 class="title-md" id="mobile-skills-title">Skills</h1>
@@ -124,7 +161,7 @@
                     </div>
                     <p class="skill-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatum nobis sint nihil praesentium consectetur repudiandae provident optio doloremque quidem.</p>
                     <div class="skill-bar-container">
-                        <div class="skill-bar" id="html"></div>
+                        <div class="skill-bar" id="css"></div>
                     </div>
                 </div>
                
@@ -143,7 +180,7 @@
                     </div>
                     <p class="skill-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatum nobis sint nihil praesentium consectetur repudiandae provident optio doloremque quidem.</p>
                     <div class="skill-bar-container">
-                        <div class="skill-bar" id="html"></div>
+                        <div class="skill-bar" id="js"></div>
                     </div>
                 </div>
                
