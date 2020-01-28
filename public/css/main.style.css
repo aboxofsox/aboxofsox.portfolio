@@ -1,3 +1,5 @@
+@import './lib/variables.css';
+
 * {
     margin: 0;
     padding: 0;
@@ -5,26 +7,13 @@
     font-family: 'Robot', sans-serif;
 }
 
-html, body {
-    overflow: hidden;
+html,
+body {
+    overflow-x: hidden;
 }
 
-body, main {
-    background: #0d0d0d;
-    color: white;
+body {
+    min-width: 100vw;
 }
 
-main {
-    font-size: 4rem;
-    display: flex;
-    flex-flow: column;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-main h1 span {
-    color: dodgerblue;
-}
+@import './projects.slider.css';

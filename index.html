@@ -4,16 +4,196 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Bebas+Neue&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/94f76db31f.js"></script>
-    <script src="public/js/client.strapper.js" type="module"></script>
-    <link href="https://fonts.googleapis.com/css?family=Muli|Squada+One&display=swap" rel="stylesheet">
+    <script src="./public/js/client.js"></script>
+    <!-- TODO: Consolidate media queries into main CSS file -->
+    <!-- TODO: Make mobile friendly project container       -->
     <link rel="stylesheet" href="public/css/main.style.css">
-    <title>Web Development</title>
+    <link rel="stylesheet" media="(min-device-width: 320px)" href="./public/css/lib/mobile-320.css"/>
+    <link rel="stylesheet" media="(min-device-width: 414px)" href="./public/css/lib/mobile-414.css"/>
+    <link rel="stylesheet" media="(min-device-width: 700px)" href="./public/css/lib/portable-700.css"/>
+    <link rel="stylesheet" media="(min-device-width: 1080px)" href="./public/css/lib/desktop-1080.css"/>
+    <title>aboxofsox</title>
 </head>
-<body>    
+<body>
+    <noscript>You'll need JavaScript to enjoy this website.</noscript>
+    <!-- Top Body  -->
+    <div class="grey-rect"></div>
+    <div class="orange-rect">
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#prjects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#">Blog</a>
+        </nav>
+    </div>
     <main>
-        <h1>Hi, I'm <span>aboxofsox</span></h1>
-        <small>My other portfolio was hot garbage, so it's gone now.</small>
-    </main>
+    <header>
+        <img src="./public/assets/images/yoda.jpg" alt="image" class="portrait">
+        <h1 class="title">aboxofsox</h1>
+        <h5 class="sub-title">web developer</h5>
+    </header>
+    <!-- Top Body End -->
+    <!-- Services Container -->
+    <section id="services" class="container">
+        <h1 class="title-md">Services</h1>
+        <div class="component flex">
+            <div class="block">
+                <div class="block-img"><i class="fas fa-code"></i></div>
+                <div class="block-text">
+                    <h2 class="heading">web development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias atque dolores consectetur dolorem necessitatibus repudiandae iure dignissimos, optio nisi impedit non a amet obcaecati sapiente iusto numquam, aperiam saepe eos?</p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="block-img"><i class="fas fa-paint-brush"></i></div>
+                <div class="block-text">
+                    <h2 class="heading">web design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias atque dolores consectetur dolorem necessitatibus repudiandae iure dignissimos, optio nisi impedit non a amet obcaecati sapiente iusto numquam, aperiam saepe eos?</p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="block-img"><i class="fas fa-concierge-bell"></i></div>
+                <div class="block-text">
+                    <h2 class="heading">web services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias atque dolores consectetur dolorem necessitatibus repudiandae iure dignissimos, optio nisi impedit non a amet obcaecati sapiente iusto numquam, aperiam saepe eos?</p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="block-img"><i class="fas fa-handshake"></i></div>
+                <div class="block-text">
+                    <h2 class="heading">consultation</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias atque dolores consectetur dolorem necessitatibus repudiandae iure dignissimos, optio nisi impedit non a amet obcaecati sapiente iusto numquam, aperiam saepe eos?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Container End -->
+
+    <!-- Projects Container -->
+    <section id="projects" class="container">
+        <h1 class="title-md">projects</h1>
+        <!-- <i class="fas fa-play"></i> -->
+        <div class="slider-container">
+            <div class="slider-block">
+                <img src="https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="slider-block-bkg">
+                <div class="slider-block-content">
+                    <h1>Project Name</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus id libero itaque totam recusandae aspernatur!</p>
+                    <button class="btn btn-primary">Demo</button>
+                </div>
+            </div>
+            <div class="slider-block">
+                <img src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="slider-block-bkg">
+                <div class="slider-block-content">
+                    <h1>Project Name</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus id libero itaque totam recusandae aspernatur!</p>
+                    <button class="btn btn-primary">Demo</button>
+                </div>
+            </div>
+            <div class="slider-block">
+                <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="slider-block-bkg">
+                <div class="slider-block-content">
+                    <h1>Project Name</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus id libero itaque totam recusandae aspernatur!</p>
+                    <button class="btn btn-primary">Demo</button>
+                </div>
+            </div>
+            <div class="slider-block">
+                <img src="https://images.pexels.com/photos/207580/pexels-photo-207580.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" class="slider-block-bkg">
+                <div class="slider-block-content">
+                    <h1>Project Name</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus id libero itaque totam recusandae aspernatur!</p>
+                    <button class="btn btn-primary">Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Container End -->
+    <!-- Skills Container Mobile -->
+    <section id="skills" class="container skills">
+        <h1 class="title-md" id="mobile-skills-title">Skills</h1>
+        <div class="skill-container">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js-square"></i>
+            <i class="fab fa-react"></i>
+            <i class="fab fa-vuejs"></i>
+            <i class="fab fa-adobe"></i>
+            <i class="fab fa-python"></i>
+        </div>
+    </section>
+    <!-- Skills Container Mobile End -->
+
+    <!-- Skills Container Desktop -->
+        <section class="container skill-container-desktop">
+            <h1 class="title-md">Skills</h1>
+            <div class="skill-block">
+                <div class="skill-block-left">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="skill-block-right">
+                    <h1 class="sub-heading">HTML</h1>
+                    <div class="pill-container">
+                        <p class="pill">HTML5</p>
+                        <p class="pill">Pug</p>
+                        <p class="pill">JSX</p>
+                    </div>
+                    <p class="skill-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatum nobis sint nihil praesentium consectetur repudiandae provident optio doloremque quidem.</p>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" id="html"></div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="skill-block">
+                <div class="skill-block-left">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill-block-right">
+                    <h1 class="sub-heading">CSS</h1>
+                    <div class="pill-container">
+                        <p class="pill">CSS3</p>
+                        <p class="pill">SCSS/SASS</p>
+                        <p class="pill">Bootstrap</p>
+                        <p class="pill">Tailwind</p>
+                    </div>
+                    <p class="skill-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatum nobis sint nihil praesentium consectetur repudiandae provident optio doloremque quidem.</p>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" id="css"></div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="skill-block">
+                <div class="skill-block-left">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <div class="skill-block-right">
+                    <h1 class="sub-heading">JavaScript</h1>
+                    <div class="pill-container">
+                        <p class="pill">ES5 & ES6</p>
+                        <p class="pill">React/Redux</p>
+                        <p class="pill">Vue.js</p>
+                        <p class="pill">Node.js</p>
+                    </div>
+                    <p class="skill-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatum nobis sint nihil praesentium consectetur repudiandae provident optio doloremque quidem.</p>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" id="js"></div>
+                    </div>
+                </div>
+               
+            </div>
+    </section>
+    <!-- Skills Container Desktop End -->
+</main>
+
+    <footer>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-discord"></i></a>
+        <button class="btn btn-util"><i class="fas fa-arrow-up"></i></button>
+    </footer>
 </body>
 </html>
