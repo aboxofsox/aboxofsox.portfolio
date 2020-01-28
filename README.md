@@ -1,1 +1,1 @@
-Nothign to see here. Just a really crappy portfolio.
+Nothing to see here. Just a really crappy portfolio.
